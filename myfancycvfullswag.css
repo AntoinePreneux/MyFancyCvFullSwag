@@ -1,4 +1,10 @@
 .container {
+    display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-columns: 50px 20px 300px 300px;
+    grid-template-rows: 10px 20px 300px 300px;
+}
+
+.me {
+    grid-area : 1 / 1 / 2 / 2;
+    width: 100%;
 }

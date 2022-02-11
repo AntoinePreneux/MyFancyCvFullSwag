@@ -1,8 +1,28 @@
 //Affecte la nouvelle image lorsque la souris survole l'élément
-function passageDeLaSouris(element) {
-    element.setAttribute('src', '6BD07BA8-0345-41A2-8622-F159E741F88F_4_5005_c.jpeg');
+function TransformeTete(element) {
+    element.setAttribute('src', 'IMG_4821.jpeg');
     }
 //Affecte l'image de départ lorsque la souris ne survole plus l'élément
-function departDeLaSouris(element) {
-    element.setAttribute('src', '9642d6fb-d7e4-4fec-b5c5-81b46c43f240.jpg');
+function RetourneTete(element) {
+    element.setAttribute('src', 'IMG_4413.jpeg');
     }
+
+WIDTH = 50
+STEP = 100
+
+function grow_() {
+  	if (WIDTH <= 299) {
+      let growing = document.getElementById("growing")
+    growing.style.width = `${WIDTH}px`
+    WIDTH += STEP
+    }
+    
+}
+
+// this will be called on loading the <body> tag
+function grow_forever() {
+    // call it once right away
+    grow()
+    // get it called every 1s after that
+    setInterval(grow, 1000)
+}
