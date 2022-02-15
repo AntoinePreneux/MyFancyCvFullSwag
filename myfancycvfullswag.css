@@ -1,10 +1,77 @@
 .container {
     display: grid;
     grid-template-columns: 10% 90%;
-    grid-template-rows: 10px 20px 300px 300px;
+    grid-template-rows:10px repeat(200px, 8);
 }
 
 .me {
     grid-area : 1 / 1 / 2 / 2;
     width: 100%;
 }
+
+.title {
+    grid-area : 1 / 2 / 2 / 3;
+    color :rgb(16, 130, 223);
+    font-size: 30px;
+
+}
+
+.competences {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.competences_py {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.competences_eng {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.competences_html {
+    grid-area: 6 / 2 / 7 / 3;
+}
+
+#python {
+    background-color: red;
+    height: 30px;
+    max-width: 50px;
+
+    /* the shorthand property would be this */
+    /* transition: all 0.5s ease-in-out; */
+    /* which is equivalent to */
+    transition-property: all; /* could specify a comma-separated
+                                finite set of properties */
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;    /* how long to wait before triggering */
+
+}
+
+#english {
+    background-color: red;
+    height: 30px;
+    width: 150px;
+
+    /* the shorthand property would be this */
+    /* transition: all 0.5s ease-in-out; */
+    /* which is equivalent to */
+    transition-property: all; /* could specify a comma-separated
+                                finite set of properties */
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;    /* how long to wait before triggering */
+
+}
+
+
+#html {
+    background-color: red;
+    height: 30px;
+    max-width: 400px;
+
+    
+    transition: all 0.5s ease-in-out;
+    
+}
+
